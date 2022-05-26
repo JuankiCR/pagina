@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Difusión Cultural | Login</title>
+
+    <link rel="stylesheet" href="/css/login.css">
+</head>
+<body>
+    <div class="loginWrapper">
+        <div class="formWrapper">
+            <div id="client" class="form login active">
+                    <legend>Iniciar Usuario</legend>
+                    <label for="nCuenta">Número de cuenta:</label>
+                    <input id="nCuenta" name="nCuenta" type="text" placeholder="Ej. 20200271">
+                    <label for="logPass">Contraseña:</label>
+                    <input id="logPass" name="logPass" type="text" placeholder="Ej. SupErrPass2021@">
+                    <button class="fbt logBtn" onclick="logUser();">Iniciar</button>
+            </div>
+            <div id="admin" class="form admin">
+                <legend>Iniciar Admin.</legend>
+                <label for="adminMail">Correo: </label>
+                <input id="adminMail" name="adminMail" type="text" placeholder="Ej. ElAdmin@ucol.mx">
+                <label for="adminPass">Contraseña: </label>
+                <input id="adminPass" name="adminPass" type="text" placeholder="Ej. SupErrPass2021@">
+                <button class="fbt adminBtn" onclick="logAdmin();">Iniciar</button>
+            </div>
+        </div>
+        <button onclick= "switchAdminClient()">Switch</button>
+    </div>
+    <script>
+        function logUser(){
+            nCuenta = document.getElementById('nCuenta');
+            pass = document.getElementById('logPass');
+            alert('USUARIO.\n\nCuenta: '+nCuenta.value+ '\nPass: '+pass.value);
+        }
+        function logAdmin(){
+            adminMail = document.getElementById('adminMail');
+            pass = document.getElementById('adminPass');
+            alert('ADMINISTRADOR.\n\nCuenta: '+adminMail.value+ '\nPass: '+pass.value);
+        }
+        function switchAdminClient(){
+            admin = document.getElementById('admin');
+            client = document.getElementById('client');
+            admin.classList.toggle('active');
+            client.classList.toggle('active');
+        }
+    </script>
+</body>
+</html>

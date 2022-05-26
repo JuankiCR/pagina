@@ -1,0 +1,18 @@
+@font-face {
+  font-family: Avenir;
+  src: url("/media/fonts/Avenir.otf");
+}
+
+@font-face {
+  font-family: Bebas;
+  src: url("/media/fonts/Bebas.ttf");
+}
+
+@font-face {
+  font-family: Hanson;
+  src: url("/media/fonts/Hanson.ttf");
+}
+
+body {
+  background-color: #dbcfb7 !important;
+}

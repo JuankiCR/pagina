@@ -1,0 +1,12 @@
+/*Main menu*/
+.main_menu {
+    background-color: #ffffff;
+    font-family: "Avenir";
+    position: fixed;
+    width: 100%;
+}
+.logo {
+    margin-left: 15px;
+    height: 50px;
+    width: 50px;
+}
